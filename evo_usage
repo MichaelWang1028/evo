@@ -1,0 +1,15 @@
+evo_traj:
+usage: evo_traj [-h] {kitti, tum, euroc, bag} ...
+trajectory analysis and manipulation tool
+example: evo_traj kitti KITTI_00_ORB.txt KITTI_00_SPTAM.txt --ref=KITTI_00_gt.txt -p --plot_mode=xz
+
+evo_traj tum SLAM/experiments/EUROC/stereo_camera_trajectory/MH01.txt --ref=/media/nvidia/KINGIDISK/datasets/euroc/machine-hall/MH01/state_groundtruth_estimate0/data.tum -v -p --plot_mode=xz --n_to_align 100
+
+
+evo_ape:
+
+evo_ape kitti /media/nvidia/KINGIDISK/datasets/kitti/data_odometry_poses/dataset/poses/00.txt SLAM/experiments/KITTI/stereo_camera_trajectory/00.txt -va --plot --plot_mode xz
+
+
+evo_ape tum ground_truth/groundtruth_fr1_360.txt CameraTrajectory/fr1_360.txt -va --plot --plot_mode xz --save_results evo_results/fr1_360.zip
+
